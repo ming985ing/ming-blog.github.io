@@ -1,0 +1,61 @@
+    /* Giscus 表情包面板样式 */
+    .giscus-emoji-panel {
+        position: relative;
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 8px;
+        background: var(--card-bg-color, #fff);
+        border: 1px solid var(--border-color, #e5e7eb);
+        box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+    .giscus-emoji-tabs {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 8px;
+        border-bottom: 1px solid var(--border-color, #e5e7eb);
+        padding-bottom: 8px;
+    }
+    .giscus-emoji-tab {
+        padding: 4px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        color: var(--font-color, #333);
+    }
+    .giscus-emoji-tab.active {
+        background: var(--theme-color, #40e0d0);
+        color: #fff;
+    }
+    .giscus-emoji-content {
+        display: none;
+        flex-wrap: wrap;
+        gap: 8px;
+        max-height: 200px;
+        overflow-y: auto;
+    }
+    .giscus-emoji-content.active {
+        display: flex;
+    }
+    .giscus-emoji-item {
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: all 0.2s;
+        object-fit: contain;
+    }
+    .giscus-emoji-item:hover {
+        transform: scale(1.1);
+        background: rgba(0,0,0,0.05);
+    }
+    /* 适配深色模式 */
+    [data-theme="dark"] .giscus-emoji-panel {
+        background: #1f2937;
+        border-color: #374151;
+    }
+    [data-theme="dark"] .giscus-emoji-tab {
+        color: #e5e7eb;
+    }
+    [data-theme="dark"] .giscus-emoji-item:hover {
+        background: rgba(255,255,255,0.1);
+    }
