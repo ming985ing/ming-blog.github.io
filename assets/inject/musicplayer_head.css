@@ -1,0 +1,48 @@
+    /* 音乐播放器修复样式 */
+    .aplayer {
+    z-index: 99999 !important;
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    }
+
+    .aplayer-mini .aplayer-body {
+    height: 66px !important;
+    }
+
+    .aplayer-list {
+    max-height: 300px !important;
+    }
+
+    /* 确保播放器可见 */
+    #aplayer-global {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    }
+
+    /* 添加音乐播放器开关按钮 */
+    .music-toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100000;
+    background: #40e0d0;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(64, 224, 208, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
